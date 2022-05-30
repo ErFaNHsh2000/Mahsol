@@ -1,0 +1,420 @@
+@font-face {
+    font-family: Vazir;
+    src: url("./Vazir.eot") format("eot ");
+    src: url("./Vazir.ttf") format("ttf");
+    src: url("./Vazir.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    direction: rtl;
+    font-family: Vazir;
+}
+
+a {
+    text-decoration: none;
+    color: #33f8ff;
+}
+
+img:hover{
+    cursor: pointer;
+}
+
+ul {
+    /* direction: rtl; */
+    display: flex;
+    font-size: 15px;
+    font-family: Vazir;
+}
+
+li {
+    display: inline;
+}
+
+.toplabel{
+    display: flex;
+    width: 100%;
+}
+
+.head1 {
+    position: relative;
+    background-image: url(./kapsol.jpg);
+}
+
+.menu1 {
+    display: flex;
+    background-color: rgb(32, 178, 170);
+    padding-right: 30px;
+}
+
+.menu1 > li {
+    display: inline;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.head1 ul .menu11:hover a {
+    color: rgb(127, 255, 0);
+}
+
+.head12 {
+    display: flex;
+    padding: 20px;
+}
+
+.logo {
+    border-radius: 10px;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    width: 70%;
+    height: 42px;
+    
+}
+
+.boxsearch {
+    background-color: #ffffff;
+    border: none;
+    width: 60%;
+    height: 40px;
+    padding: 20px;
+    border: 1px solid rgb(127, 255, 0);
+    outline: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.searchicon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #474747;
+    background-color: rgb(127, 255, 0);
+    padding: 10px;
+    cursor: pointer;
+    height: 41px;
+    font-size: 15px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.searchicon:hover {
+    color: #ffffff;
+}
+
+#searchicon {
+    margin-left: 5px;
+}
+
+.users {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 350px;
+}
+
+#inp, #fav, #shop {
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 50px;
+    color: #474747;
+    background-color: rgb(255, 58, 58);
+    cursor: pointer;
+}
+
+#inp:hover, #fav:hover, #shop:hover {
+    color: #ffffff;
+    background-color: rgb(255, 88, 88);
+    border: 2px solid #ffffff;
+    padding: 18px;
+}
+
+.head13{
+    background-color: rgb(0, 170, 255);
+    position: absolute;
+    display: inline;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+.head13 .menu2 li{
+    margin: 10px 30px 0 30px ;
+}
+.head13 .menu2 li a{
+    color: #ffffff;
+}
+#rotate1 { 
+    position: absolute;
+    bottom: 15px;
+    font-size: 20px;
+    margin-right: 5px;
+    color: #ffffff;
+}
+.menu2 li:hover #rotate1 {
+    transition: all 0.5s;
+    transform: rotate(180deg);
+}
+
+.droplist1, .droplist2, .droplist3, .droplist4, .droplist5, .droplist6{
+    display: none;
+    position: absolute;
+    background-color: rgb(0, 170, 255);
+    width: auto;
+    height: auto;
+    padding: 10px;
+    margin: 5px;
+    right: 20px;
+    top: 40px;
+}
+
+.droplist2{
+    right: 200px;
+}
+
+.droplist3{
+    right: 365px;
+}
+
+.droplist4{
+    right: 545px;
+}
+
+.droplist5{
+    right: 660px;
+}
+
+.droplist6{
+    right: 790px;
+}
+
+.droplist1 .menu221, .droplist2 .menu222, .droplist3 .menu223, .droplist4 .menu224, .droplist5 .menu225, .droplist6 .menu226{
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+.droplist1 .menu221:hover, .droplist2 .menu222:hover, .droplist3 .menu223:hover, .droplist4 .menu224:hover, .droplist5 .menu225:hover, .droplist6 .menu226:hover{
+cursor: pointer;
+}
+
+.menu21:hover .droplist1, .menu22:hover .droplist2, .menu23:hover .droplist3, .menu24:hover .droplist4, .menu25:hover .droplist5, .menu26:hover .droplist6{
+
+    display: flex;
+}
+
+.mahsol{
+    display: flex;
+    flex-direction: column;
+    margin-top: 53px;
+}
+
+.moarefimahsol{
+    display: flex;
+    width: 70%;
+    height: auto;
+    margin-top: 100px;
+    margin-right: 200px;
+    background-color: rgba(179, 179, 179, 0.285);
+    border: 3px solid #bcbcbc;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.moarefimahsol .right{
+    width: 60%;
+    height: 100%;
+}
+
+.moarefimahsol .left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.namemahsol{
+    background-color: #f56;
+    padding: 10px;
+    width: 80%;
+    height: auto;
+    margin: 40px 20px 0 0;
+    border-right: 5px solid #ffff00;
+    border-radius: 5px;
+}
+
+.namemahsol h1{
+    font-size: 30px;
+}
+
+.gheymat{
+    margin: 50px 20px 0 0;
+    padding: 20px;
+    width: 50%;
+    height: auto;
+}
+
+.gheymat label{
+    background-color: #0073e0;
+    display: block;
+    width: 190px;
+    font-size: 15px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+
+.gheymat .prices span, .gheymat .shopping{
+    background-color: #49494994;
+    border: 1px solid #6c6c6c;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.gheymat .shopping{
+    color: #ffffff;
+    background-color: #00ff0094;
+}
+.gheymat .shopping:hover{
+    cursor: pointer;
+    color: #ff0000;
+}
+
+.left img{
+    border-radius: 25px;
+}
+.left img:hover{
+    transition: all .5s;
+    transform: scale(1.1);
+}
+
+.moshakhasatmahsol, .Baressi{
+    width: 70%;
+    height: auto;
+    margin-top: 100px;
+    margin-right: 200px;
+    background-color: rgba(179, 179, 179, 0.285);
+    border: 3px solid #bcbcbc;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.moshakhasatmahsol h1, .Baressi h1 {
+    display: block;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #474747;
+    padding: 10px 20px 10px 0;
+}
+
+.moshakhasatkhososi {
+    margin: 30px;
+}
+
+.moshakhasatkhososi .header{
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #87a91f;
+    border-bottom: 3px solid rgba(0,0,0,.5);
+}
+
+.moshakhasatkhososi .eachrow{
+    display: block;
+}
+
+.moshakhasatkhososi .eachrow span{
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    color: #474747;
+    background-color: #ffffff;
+    border: 1px solid rgb(0,0,0,.2);
+}
+
+.moshakhasatkhososi .eachrow .txt1{
+    width: 20%;
+}
+.moshakhasatkhososi .eachrow .txt2{
+    width: 77%;
+}
+
+.Tozihat{
+    font-size: 15px;
+    font-weight: normal;
+    margin: 30px;
+    color: #474747;
+}
+
+.Tozihat p{
+    margin-bottom: 10px;
+}
+
+
+
+footer{
+    display: inline-block;
+    background-color:#27aa9a;
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+
+footer span{
+    color: #ffffff;
+}
+.groups1{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.group1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.group1 img{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    cursor: text;
+}
+
+.groups2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.groups2 i{
+    font-size: 30px;
+    color: #ffffff;
+    margin: 10px;
+    padding: 10px;
+}
+
+.groups2 i:hover{
+    background-color: #f56;
+    color: #25c9b6;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer p{
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    padding-bottom: 5px;
+}
